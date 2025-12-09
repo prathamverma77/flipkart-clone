@@ -30,7 +30,7 @@
   min-width: 250px;
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 1200px) {
   .category-class {
     display: flex;
     flex-wrap: nowrap;
