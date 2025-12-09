@@ -30,6 +30,20 @@
   min-width: 250px;
 }
 
+.category-class {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .categoryrow-class {
+    flex: 0 0 auto;
+    text-align: center;
+  }
+  .cart-class {
+    display: none;
+  }
+
 @media (max-width: 1200px) {
   .category-class {
     display: flex;
