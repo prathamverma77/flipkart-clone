@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Login button hover effect */
+.loginbutton-class:hover {
+  background-color: rgb(66, 66, 255) !important;
+  color: white !important;
+  position: relative;
+  display: block;
+}
+.dropdown:hover .arrow-icon {
+  transform: rotate(180deg);  
+}
+.dropdown:hover {
+  color: blue;
+}
+
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+.loginbutton-class:hover .arrow-icon {
+  transform: rotate(180deg);
+}
+
+/* Large dropdown menu */
+.big-dropdown {
+  min-width: 250px;
+}
+
+@media (max-width: 1190px) {
+  .category-class {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .categoryrow-class {
+    flex: 0 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cart-class {
+    display: none;
+  }
+}
+
+/* Dropdown submenu (multi-level dropdowns) */
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin: 0 0.1rem;
+  display: none;
+}
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Submenu normal behaviour */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 1px;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;   
+  left: 0;
+  
+}
+
+.threedot-class  {
+  left: auto;
+  right: 50%;
+}
+
+
+
+
+.carousel-control-prev{
+  opacity: 1 !important;
+}
+.arrow-btn1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+  width: 50px;
+  color: grey;
+  margin-right: 185px;
+  
+  
+}
+
+
+
+.carousel-control-next{
+  opacity: 1 !important;
+}
+.arrow-btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+  width: 50px;
+  color: grey;
+  margin-left: 185px;
+
+
+}
+
+
+
+@media (max-width: 767px) {
+		.carousel-inner .carousel-item > div {
+			display: none;
+		}
+		.carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+	/* medium and up screens */
+	@media (min-width: 768px) {
+
+		.carousel-inner .carousel-item-end.active,
+		.carousel-inner .carousel-item-next {
+			transform: translateX(16.6667%);
+		}
+
+		.carousel-inner .carousel-item-start.active, 
+		.carousel-inner .carousel-item-prev {
+			transform: translateX(-16.6667%);
+		}
+	}
+
+	.carousel-inner .carousel-item-end,
+	.carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+
+
+.fixed-img {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  /* border: 1px solid yellow; */
+  flex-wrap: nowrap;
+  
+ 
+  
+}
+.fixed-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.box-size {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  /* border: 1px solid green; */
+  align-items: center;
+  text-align: center;
+
+}
+
+.arrow-btn3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+  width: 50px;   /* same as right */
+  color: grey;
+  margin-left: -300px;  /* small tweak just to move closer to edge */
+}
+
+.arrow-btn4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+  width: 50px;   /* keep same as left */
+  color: grey;
+  margin-right: -300px;  /* instead of margin-left:300px */
+}
+
+.carousel-dabba {
+  display: flex; 
+  justify-content: center;
+  text-align: center;
+}
+
+.arrow-btn5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+  width: 50px;   /* same as right */
+  color: grey;
+  margin-left: -300px;  /* small tweak just to move closer to edge */
+}
+
+.arrow-btn6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+  width: 50px;   /* keep same as left */
+  color: grey;
+  margin-right: -300px;  /* instead of margin-left:300px */
+}
+
+.card {
+    border: none !important;   /* removes border */
+    
+}
+
+.box-img-item {
+  height: 250px;
+  width: 250px;
+  border: 1px solid rgb(234, 232, 232);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  /* margin: 1px; */
+}
+
+.box-img-item img {
+  height: 80%;
+  width: 80%;
+  object-fit: contain; /* keeps aspect ratio inside box */
+}
+
+.small-button {
+  border-radius: 50%;
+  background-color: rgb(74, 112, 236); 
+  color: white;
+  font-size: 20px; 
+  width: 30px;
+  height: 30px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-name {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+}
+.item-offer {
+  font-size: 19px;
+  font-weight: 500;
+  color: green;
+}
+
+.arrow-btn7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+  width: 50px;  
+  color: grey;
+  margin-right: 300px; 
+}
+
+.arrow-btn8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 90px;
+  width: 50px;   
+  color: grey;
+  margin-right: -300px;  
+}
+
+/* General footer link styles */
+.bg-dark a {
+  color: #ffffff;       
+  text-decoration: none; 
+}
+
+.bg-dark a:hover {
+  color: #cccccc;         
+}
+
+/* Social icons */
+.social a {
+  color: #ffffff;     
+  margin-right: 10px;      
+  font-size: 20px;       
+}
+
+.social a:hover {
+  color: #cccccc;
+}
+.text-decoration-none{
+  color: rgb(98, 97, 97);
+  font-size: 12px;
+}
+
+.list-class a {
+  font-size: 12px;
+  font-weight: bold;
+}
+.list-class p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.list-class {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(120, 120, 120);
+}
+.list-class h4 {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(120, 120, 120);
+}
+.list-classp {
+  font-size: 12px;
+  font-weight: 100;
+  color: white;
+}
+.social{
+  color: white;
+}
+
+.footer-info {
+  font-size: 12px;
+}
